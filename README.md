@@ -6,9 +6,10 @@ API para la gestión de tareas con funcionalidades de creación, consulta, actua
 
 [Ver aplicación en producción](https://taskapimanager.onrender.com)
 
-## Instalación y Ejecución Local para la Base de Datos en Local
+## Instalación y Ejecución Local para la Base de Datos
 
-Si deseas ejecutar la API en tu entorno local y usar MongoDB de manera local, sigue las instrucciones a continuación. La URL de conexión a la base de datos está configurada como `mongodb://127.0.0.1:27017/apiTask`.
+Si deseas ejecutar la API en tu entorno local o MongoDB Atlas de manera local, sigue las instrucciones a continuación. La URL de conexión a la base de datos está configurada como dbURI=`mongodb://127.0.0.1:27017/apiTask`.
+utilizando MongoDb Atlas MONGO_CNN=mongodb+srv://7PBFJijlXuSS492s:7PBFJijlXuSS492s@miclustercafe.lhenr.mongodb.net/apiTask.
 
 ### Requisitos previos
 
