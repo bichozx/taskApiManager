@@ -5,7 +5,7 @@
     "title": "APITASK",
     "description": "API para manejar tareas, permitiendo creación, consulta, actualización y eliminación."
   },
-  "host": "localhost:3000",
+  "host": "localhost:8082",
   "basePath": "/api",
   "paths": {
     "/tasks": {

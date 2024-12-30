@@ -3,8 +3,8 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../swagger.json');
-const tasksRoutes = require('../routes/tareas'); 
+const swaggerDocument = require('../../swagger.json');
+const tasksRoutes = require('../routes/task.routes'); 
 
 const { dbConnectiion } = require('../database/config');
 
@@ -37,13 +37,13 @@ class Server {
   }
 
   middlewares() {
-    this.app.use(cors()); // Habilitar CORS
-    this.app.use(express.json()); // Habilitar JSON para solicitudes
-    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); // Swagger
+    this.app.use(cors()); 
+    this.app.use(express.json()); 
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); 
   }
 
   routes() {
-    this.app.use(this.paths.tasks, tasksRoutes); // Rutas de tareas
+    this.app.use(this.paths.tasks, tasksRoutes); 
   }
 
   listen() {
